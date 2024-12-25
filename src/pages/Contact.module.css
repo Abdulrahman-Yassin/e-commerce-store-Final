@@ -1,0 +1,124 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.container .title {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.title>span {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.title span:nth-child(2) {
+    color: #000;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+
+.data div div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.data div div h6 {
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+
+.data div p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+
+.container .data {
+    width: 340px;
+    height: 420px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.container form {
+    margin-top: 200px;
+    width: 800px;
+    height: 420px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.container form div {
+    display: flex;
+    width: 737px;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.container input {
+    background: #F5F5F5;
+    width: 235px;
+}
+
+textarea  {
+    width: 717px;
+    height: 207px;
+    background: #F5F5F5;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.container form div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container form button {
+    width: fit-content;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 4px;
+    background: #DB4444;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    
+    .container form div:nth-child(2) {
+        align-items: flex-start;
+    }
+    textarea {
+        width: 245px;
+    }
+    .container form {
+        max-width: 300px;
+        height: 500px;
+        margin-top: 70px;
+    }
+    .container form>div {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    .container {
+        max-width: 400px;
+        flex-direction: column;
+    }
+    .container .data {
+        padding: 20px;
+    }
+}

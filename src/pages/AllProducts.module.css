@@ -1,0 +1,25 @@
+.products {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    z-index: -1;
+    margin-top: 50px;
+}
+
+.products .product {
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .products {
+        max-width: 400px;
+        flex-direction: column;
+    }
+    .products .product {
+        max-width: 350px;
+        margin: 30px auto;
+    }
+    
+}

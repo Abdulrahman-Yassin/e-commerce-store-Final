@@ -1,0 +1,19 @@
+.swiper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        width: 300px;
+        margin: 30px 40px;
+
+    }
+    .swiper-slide {
+        z-index: -1;
+    }
+}

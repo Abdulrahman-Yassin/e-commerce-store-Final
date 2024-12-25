@@ -1,0 +1,194 @@
+.page {
+    width: 1170px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.page>span {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 21px;
+    color: gray;
+}
+
+.page>span>span {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 21px;
+    color: black;
+}
+
+.page h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-weight-medium);
+    font-size: 36px;
+    line-height: 30px;
+    margin-top: 100px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+
+
+
+.form span {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.form input {
+    margin-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product>div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coupon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.coupon input {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black ;
+    border-radius: 4px;
+}
+
+.coupon input::placeholder {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.apply {
+    margin: 0;
+    color: white;
+    background-color: #DB4444;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.radio>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio>div {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio label {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.radio img {
+    height: 28px;
+}
+
+.bank {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cash label {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.cash {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .page {
+        max-width: 400px;
+    }
+    .page h1 {
+        margin-top: 50px;
+    }
+    .page .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .page .form span, input {
+        width: 300px;
+    }
+    .page .form  {
+        max-width: 400px;
+    }
+    .page .total {
+        max-width: 400px;
+    }
+    .payment {
+        display: flex;
+        flex-direction: column;
+    }
+    .payment input {
+        width: fit-content;
+    }
+    .page .apply {
+        margin: 0;
+        color: white;
+        background-color: #DB4444;
+        border: none;
+        border-radius: 4px;
+        padding: 15px;
+        padding-bottom: 15px;
+        cursor: pointer;
+    }
+}

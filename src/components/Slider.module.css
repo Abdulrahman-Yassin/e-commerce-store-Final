@@ -1,0 +1,184 @@
+.slide {
+    width: 260px;
+    position: relative;
+    z-index: -1;
+    border: black 1px solid;
+    border-radius: 4px;
+    padding: 9px;
+}
+
+.image img {
+    height: fit-content;
+}
+
+/* .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.main img {
+    max-height: 100%;
+    width: 100%;
+}
+
+.captions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    height: 150px;
+    /* background: #F5F5F5; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image .offer {
+    width: 55px;
+    height: 26px;
+    text-align: center;
+    background: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.none {
+    display: none;
+}
+
+.image .New {
+    width: 55px;
+    height: 26px;
+    text-align: center;
+    background: green;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heart .img {
+    margin: 6px;
+    width: 21px;
+    height: 19px;
+}
+
+.eye {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+h5 {
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.captions div {
+    display: flex;
+    gap: 20px;
+}
+
+.captions span {
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .5);
+    text-decoration:line-through ;
+}
+
+.captions .price {
+    display: flex;
+    gap: 10px;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(219, 68, 68, 1);
+    text-decoration: none;
+    /* padding-bottom: 10px; */
+}
+
+
+.captions .stars {
+    display: flex;
+    gap: 5px;
+}
+
+.captions .stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.captions .stars span {
+    text-decoration: none;
+}
+
+.image .add {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    background: black;
+    color: white;
+    padding: 5px 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.image .remove {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    background: red;
+    color: white;
+    padding: 5px 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.slide:hover .add {
+    bottom: 0;
+}
+.slide:hover .remove {
+    bottom: 0;
+}
+
+.slide button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+a::before {
+    display: none;
+}

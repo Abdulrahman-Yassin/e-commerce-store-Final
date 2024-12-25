@@ -1,0 +1,133 @@
+.detail {
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .detail {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        gap: 20px;
+        position: relative;
+    }
+}
+
+.detail input {
+    background: transparent;
+}
+
+.newProduct h1 {
+    display: inline;
+}
+
+.newProduct button {
+    width: 200px;
+    padding: 10px;
+    color: white;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.newProduct input {
+    background: transparent;
+}
+
+.newProduct div>div input {
+    width: 74px;
+    border: black 1px solid;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.newProduct .image {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newProduct .image input {
+    width: 500px;
+
+}
+
+@media (max-width: 768px) {
+    .newProduct .image input {
+        width: 350px;
+    }
+}
+
+
+.detail button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+    color: white;
+    background: red;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .detail button {
+        position: absolute;
+        bottom: 285px;
+        left: 0;
+        width: 200px;
+        padding: 10px;
+        color: white;
+        background: red;
+        outline: none;
+        border: none;
+    }
+}
+
+.edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit div input {
+    width: 74px;
+    border: black 1px solid;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.edit .images {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit .images input {
+    width: 500px;
+    border: black 1px solid;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .edit .images input {
+        width: 350px;
+        border: black 1px solid;
+        border-radius: 4px;
+    }
+
+    .edit .images {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

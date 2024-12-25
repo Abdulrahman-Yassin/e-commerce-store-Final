@@ -1,0 +1,36 @@
+.title {
+    position: relative;
+    margin-top: 50px;
+}
+
+.title span {
+    font-weight: var(--font-weight-semibold);
+    font-size: 16px;
+    line-height: 20px;
+    color: #DB4444;
+    padding-left: 40px;
+}
+
+.title span::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #DB4444;
+    top: -6px;
+    left: 0;
+    border-radius: 4px;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-semibold);
+    font-size: 36px;
+    line-height: 48px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+}
